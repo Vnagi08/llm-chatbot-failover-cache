@@ -399,3 +399,31 @@ button:disabled {
     max-width: 100%;
   }
 }
+
+/* Assistant markdown */
+.bubble.assistant {
+  white-space: normal;
+}
+.md p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.md .md-gap {
+  height: 0.6em;
+}
+.md .md-heading {
+  font-weight: 650;
+}
+.md ul,
+.md ol {
+  margin: 0.25em 0;
+  padding-left: 1.3em;
+}
+.md li + li {
+  margin-top: 0.15em;
+}
+.md code {
+  background: var(--chip-bg);
+  padding: 1px 5px;
+  border-radius: 5px;
+}

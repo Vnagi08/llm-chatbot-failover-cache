@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { API_BASE_URL, sendChat } from "./api.js";
+import { Markdown } from "./markdown.jsx";
 
 function newSessionId() {
   const rand =
@@ -73,7 +74,9 @@ function Message({ msg }) {
     <div className="row assistant">
       <div className="avatar" aria-hidden="true">AI</div>
       <div className="assistant-block" data-testid="assistant-message">
-        <div className="bubble assistant">{msg.content}</div>
+        <div className="bubble assistant">
+          <Markdown text={msg.content} />
+        </div>
         <MetadataBar meta={msg.metadata} />
       </div>
     </div>

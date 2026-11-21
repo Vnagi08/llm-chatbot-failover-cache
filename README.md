@@ -28,6 +28,7 @@ A full-stack chatbot: **React** frontend, **FastAPI** backend and **LiteLLM** ga
 | Frontend | https://frontend-production-4f5ae195.up.railway.app |
 | Backend | https://backend-production-42e9bc30.up.railway.app ([/health](https://backend-production-42e9bc30.up.railway.app/health)) |
 | Repository | https://github.com/Vnagi08/llm-chatbot-failover-cache |
+| Demo video | https://youtu.be/3oJ_vo_h1vo |
 
 Both tiers are hosted on Railway. The backend uses a persistent Railway volume at `/data` and has `ENABLE_FAILURE_SIMULATION=true`. Model: `gemini/gemini-3.5-flash-lite`, with two Gemini keys from separate Google projects.
 
