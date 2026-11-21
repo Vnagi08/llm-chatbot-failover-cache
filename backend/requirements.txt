@@ -1,0 +1,8 @@
+fastapi==0.162.5
+uvicorn[standard]==0.54.0
+pydantic==2.14.4
+pydantic-settings==2.15.0
+litellm==1.110.2
+# litellm 1.110.x imports these on its cache-hit code path but does not declare them.
+orjson==3.13.0
+soundfile==0.14.0
